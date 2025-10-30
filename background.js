@@ -1,5 +1,7 @@
 // Your Gemini API key (get free from https://makersuite.google.com/app/apikey)
-const GEMINI_API_KEY = 'AIzaSyB34pO9__6NmTym9DLL2hewltDLdSmViOc';
+// Import config
+importScripts('config.js');
+const GEMINI_API_KEY = CONFIG.GEMINI_API_KEY;
 const GEMINI_API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-exp:generateContent?key=${GEMINI_API_KEY}`;
 
 // Cache to avoid repeated API calls
